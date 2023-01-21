@@ -3,7 +3,7 @@ import SmallBtn from "../../utils/SmallBtn";
 
 export default function Header() {
    return (
-      <header className="bg-black px-8 py-4 flex items-center justify-between">
+      <header className="bg-black px-8 py-4 flex items-center justify-between h-20 fixed w-full z-[100]">
          <section className="flex items-center justify-start">
             <img src="/images/logo.png" className="w-12" />
             <div className="text-white ml-4">
