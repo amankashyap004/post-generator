@@ -11,12 +11,12 @@ export default function DraftEditor() {
       setEditorState(newEditorState);
    };
 
-   const [inputValue, setInputValue] = React.useState("Input Value");
-   const handleSave = () => {
-      const content = convertToRaw(editorState.getCurrentContent());
-      // console.log(content);
-      setInputValue(content.blocks[0].text);
-   };
+   // const [inputValue, setInputValue] = React.useState("Input Value");
+   // const handleSave = () => {
+   //    const content = convertToRaw(editorState.getCurrentContent());
+   //    // console.log(content);
+   //    setInputValue(content.blocks[0].text);
+   // };
 
    return (
       <section>
@@ -29,10 +29,10 @@ export default function DraftEditor() {
                onEditorStateChange={onEditorStateChange}
             />
          </div>
-         <div onClick={handleSave} className="flex items-start justify-start w-fit h-fit my-4">
+         {/* <div onClick={handleSave} className="flex items-start justify-start w-fit h-fit my-4">
             <SmallBtn text="Save" />
          </div>
-         <h2 className="text-white">{inputValue}</h2>
+         <h2 className="text-white">{inputValue}</h2> */}
       </section>
    );
 }
