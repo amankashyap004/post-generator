@@ -1,5 +1,6 @@
 import React from "react";
 import EditorPageInputs from "../../components/public/EditorPageInputs";
+import DraftEditor from "../../components/public/DraftEditor";
 
 export default function EditorPage(props) {
    return (
@@ -7,9 +8,9 @@ export default function EditorPage(props) {
          <div className="flex justify-center items-center">
             <h1 className="text-white text-xl font-bold">Editor</h1>
          </div>
-         <div>
-            <EditorPageInputs value={props.value} onChange={props.onChange} />
-         </div>
+         <section className="px-8 py-4">
+            <DraftEditor />
+         </section>
       </main>
    );
 }
