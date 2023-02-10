@@ -1,5 +1,4 @@
 import React from "react";
-import Input from "../../utils/Input";
 import DraftEditor from "./DraftEditor";
 
 export default function EditorPageInputs(props) {
@@ -19,21 +18,6 @@ export default function EditorPageInputs(props) {
    return (
       <section className="px-8 py-4">
          <DraftEditor />
-         {/* <Input
-            inputText="Top Text"
-            name="topText"
-            value={inputValue.topText}
-            onChange={handleChange}
-         />
-         <Input
-            inputText="Bottom Text"
-            name="bottomText"
-            value={inputValue.bottomText}
-            onChange={handleChange}
-         />
-         <h1 className="text-white">{inputValue.topText}</h1>
-         <h1 className="text-white">{inputValue.bottomText}</h1> */}
-         <Input inputText="Input" name="text" value={props.value} onChange={props.onChange} />
       </section>
    );
 }

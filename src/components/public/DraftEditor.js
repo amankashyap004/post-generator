@@ -14,7 +14,7 @@ export default function DraftEditor() {
    const [inputValue, setInputValue] = React.useState("Input Value");
    const handleSave = () => {
       const content = convertToRaw(editorState.getCurrentContent());
-      console.log(content);
+      // console.log(content);
       setInputValue(content.blocks[0].text);
    };
 
