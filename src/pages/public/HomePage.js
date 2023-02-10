@@ -1,21 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import EditorPage from "./EditorPage";
 import ResultPage from "./ResultPage";
 
 export default function HomePage() {
-   // const [inputValue, setInputValue] = React.useState({
-   //    text: "Text here...",
-   // });
-
-   // function handleChange(event) {
-   //    const { name, value } = event.target;
-   //    setInputValue((prevFromData) => ({ ...prevFromData, [name]: value }));
-   // }
+   const [inputValue, setInputValue] = React.useState("Text here...");
 
    return (
       <section className="flex">
-         <EditorPage />
-         <ResultPage />
+         <EditorPage inputValue={inputValue} setInputValue={setInputValue} />
+         <ResultPage inputValue={inputValue} />
       </section>
    );
 }
