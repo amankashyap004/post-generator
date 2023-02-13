@@ -5,24 +5,20 @@ import ResultContainer from "./ResultContainer";
 export default function MemeData({ inputValue }) {
    const [meme, setMeme] = useState(null);
 
-   useEffect(() => {
-      async function fetchMeme() {
-         const response = await fetch("https://api.imgflip.com/get_memes");
-         const data = await response.json();
-         const { memes } = data.data;
-         const randomIndex = Math.floor(Math.random() * memes.length);
-         setMeme(memes[randomIndex].url);
-      }
-
-      fetchMeme();
-   }, []);
-
-   const handleClick = async () => {
+   async function fetchMeme() {
       const response = await fetch("https://api.imgflip.com/get_memes");
       const data = await response.json();
       const { memes } = data.data;
       const randomIndex = Math.floor(Math.random() * memes.length);
       setMeme(memes[randomIndex].url);
+   }
+
+   useEffect(() => {
+      fetchMeme();
+   }, []);
+
+   const handleClick = async () => {
+      fetchMeme();
    };
 
    return (
