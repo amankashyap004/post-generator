@@ -3,6 +3,7 @@ import Header from "./components/public/Header";
 // import EditorPage from "./pages/public/EditorPage";
 // import ResultPage from "./pages/public/ResultPage";
 import HomePage from "./pages/public/HomePage";
+import MemeData from "./components/public/MemeData";
 
 export default function App() {
    return (
@@ -12,6 +13,7 @@ export default function App() {
             {/* <EditorPage />
             <ResultPage /> */}
             <HomePage />
+            <MemeData />
          </section>
       </div>
    );
