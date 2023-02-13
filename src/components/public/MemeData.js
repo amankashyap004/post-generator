@@ -27,10 +27,10 @@ export default function MemeData({ inputValue }) {
 
    return (
       <div className="flex justify-start items-start flex-col w-full">
-         <div onClick={handleClick} className="mb-2 flex justify-start items-start">
+         <div onClick={handleClick} className="flex justify-start items-start">
             <SmallBtn text="Get Random Meme" />
          </div>
-         <div className="flex justify-center items-center flex-col p-4 rounded relative">
+         <div className="flex justify-center items-center">
             <ResultContainer meme={meme} inputValue={inputValue} />
          </div>
       </div>
