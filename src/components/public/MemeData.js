@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import SmallBtn from "../../utils/SmallBtn";
+import ResultContainer from "./ResultContainer";
 
-export default function MemeData() {
+export default function MemeData({ inputValue }) {
    const [meme, setMeme] = useState(null);
 
    useEffect(() => {
@@ -30,7 +31,7 @@ export default function MemeData() {
             <SmallBtn text="Get Random Meme" />
          </div>
          <div className="flex justify-center items-center flex-col p-4 rounded relative">
-            {meme && <img src={meme} alt="random meme" className="w-full" />}
+            <ResultContainer meme={meme} inputValue={inputValue} />
          </div>
       </div>
    );
