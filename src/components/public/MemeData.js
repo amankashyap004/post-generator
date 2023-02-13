@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SmallBtn from "../../utils/SmallBtn";
 
 export default function MemeData() {
    const [meme, setMeme] = useState(null);
@@ -24,9 +25,13 @@ export default function MemeData() {
    };
 
    return (
-      <div>
-         {meme && <img src={meme} alt="random meme" />}
-         <button onClick={handleClick}>Get Random Meme</button>
+      <div className="flex justify-start items-start flex-col w-full">
+         <div onClick={handleClick} className="mb-2 flex justify-start items-start">
+            <SmallBtn text="Get Random Meme" />
+         </div>
+         <div className="flex justify-center items-center flex-col p-4 rounded relative">
+            {meme && <img src={meme} alt="random meme" className="w-full" />}
+         </div>
       </div>
    );
 }
