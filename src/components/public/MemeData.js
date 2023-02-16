@@ -26,7 +26,7 @@ export default function MemeData({ inputValue }) {
          <div onClick={handleClick} className="flex justify-start items-start">
             <SmallBtn text="Get Random Meme" />
          </div>
-         <div className="flex justify-center items-center">
+         <div className="flex justify-center items-center py-4">
             <ResultContainer meme={meme} inputValue={inputValue} />
          </div>
       </div>
