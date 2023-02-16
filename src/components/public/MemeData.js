@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SmallBtn from "../../utils/SmallBtn";
 import ResultContainer from "./ResultContainer";
+// import DragAndDrop from "./DragAndDrop";
 
 export default function MemeData({ inputValue }) {
    const [meme, setMeme] = useState(null);
@@ -28,6 +29,7 @@ export default function MemeData({ inputValue }) {
          </div>
          <div className="flex justify-center items-center py-4">
             <ResultContainer meme={meme} inputValue={inputValue} />
+            {/* <DragAndDrop meme={meme} inputValue={inputValue} /> */}
          </div>
       </div>
    );
