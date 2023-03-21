@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/post-generator/static/css/main.ece47405.css",
+    "main.js": "/post-generator/static/js/main.2e21194f.js",
+    "index.html": "/post-generator/index.html",
+    "main.ece47405.css.map": "/post-generator/static/css/main.ece47405.css.map",
+    "main.2e21194f.js.map": "/post-generator/static/js/main.2e21194f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ece47405.css",
+    "static/js/main.2e21194f.js"
+  ]
+}
